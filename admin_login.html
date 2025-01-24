@@ -1,35 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Jiho - login</title>    
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiho - login</title>            
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    
     <style>
-    .line {
-            display: flex;
-            flex-basis: 100%;
-            align-items: center;
-            color: rgba(249, 254, 255, 0.847);
-            font-size: 14px;
-            margin: 8px 0px;
+        .word-with-background-line {
+      display: inline-block;
+      background-image: linear-gradient(to right, transparent 0%, transparent 45%, black 45%, black 55%, transparent 55%, transparent 100%);
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 0 10px;
     }
-    .line::before{
-            content: "";            
-            flex-grow: 1;
-            margin: 0px 16px;
-            background: rgba(249, 254, 255, 0.847);
-            height: 1px;
-            font-size: 0px;
-            line-height: 0px;            
-    }
-    .line::after {
-            content: "";
-            flex-grow: 1;
-            margin: 0px 16px;
-            background: rgba(249, 254, 255, 0.847);
-            height: 1px;
-            font-size: 0px;
-            line-height: 0px;
-    }
-    </style>    
+    </style>
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300"></body>
 <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
@@ -38,7 +23,7 @@
             <div class="col-md-6 col-lg-5 d-flex">
                 <div class="img-about img d-flex align-items-stretch">
                     <div class="overlay"></div>
-                    <div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/bg_1.png);">
+                    <div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/login_desktop.png);">
                     </div>
                 </div>
             </div>
@@ -51,20 +36,31 @@
                 <br>               
                 <br><button type="button" class="btn btn-primary">Sign in with facebook</button>
                 <br>
-                <br><div class="line">
-                    or use email
-              </div>
-            </div>        
-            </p>
+                <span class="word-with-background-line">or use email</span>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@exaple.com">
+                <label for="floatingInput">name@example.com</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Remember me
+                </label>                
+            </div>
+            <p><a href="#" class="link-primary">Forgot Password?</a></p>                
             <p><a href="#" class="btn btn-primary py-3 px-3">Sign In</a></p>
+            <p><a href="#" class="link-primary">Create an account</a></p>                
           </div>
           </div>
         </div>
     </div>
     </div>
 </section>
-
-<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
