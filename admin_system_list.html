@@ -58,6 +58,10 @@
       width: 100%; 
       margin-bottom: 10px; 
   }
+  /* 추가 스타일: select와 input의 너비를 더 길게 */
+  .wide-select {
+          width: 100%; /* 부모 컨테이너의 너비에 맞춤 */
+      }
   </style>
 </head>
 <body>    
@@ -122,32 +126,162 @@
     <p><span style="color: #0056b3;">Page 1</span> > <span style="color: #0056b3;">Page 2</span> > Default</p>
     <h1>Code</h1>
     <form class="row g-3 needs-validation novalidate">
-      <div class="col-md-3">
-    <select class="form-select" aria-label="Default select example" style="width: 350px;">
+      <div class="col-md-2">
+    <select class="form-select" aria-label="Default select example">
       <option selected>N</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
     </select>
       </div>
-      <div class="col-md-3">
-      <select class="form-select" aria-label="Default select example" style="width: 350px;">
+      <div class="col-md-2">
+      <select class="form-select" aria-label="Default select example">
         <option selected>Y</option>
             <option value="1">2025</option>
             <option value="2">2024</option>
             <option value="3">2023</option>
       </select>
       </div>
-      <div class="col-md-3">
-        <select class="form-select" aria-label="Default select example" style="width: 350px;">
+      <div class="col-md-2">
+        <select class="form-select" aria-label="Default select example">
           <option selected>날짜</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
         </select>
-        </div>
-
+      </div>
+          <div class="col-md-2">            
+            <input type="text" class="form-control" id="validationCustom02" placeholder="2024-12-25" required>
+            <div class="valid-feedback"></div>                      
+          </div>
+          <div class="col-md-2">            
+            <input type="text" class="form-control" id="validationCustom02" placeholder="2025-01-24" required>
+            <div class="valid-feedback"></div>                      
+          </div>
       </form>
+      <br>
+      <div class="row">
+        <div class="col-md-3">        
+          <select class="form-select" aria-label="Default select example">
+            <option selected>검색구분</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+          </select>
+        </div>          
+        <div class="col-md-3">            
+          <input type="text" class="form-control" id="validationCustom02" placeholder="검색어" required>
+          <div class="valid-feedback"></div>                      
+        </div>
+        <div class="col-md-3">
+          <button class="btn btn-primary" type="button">
+            <img src="./images/search.svg" alt="이미지 설명" style="width: 20px; height: 20px;">            
+          </button>
+          <button class="btn btn-primary" type="button">
+            <img src="./images/rotate-cw.svg" alt="이미지 설명" style="width: 20px; height: 20px;">            
+          </button>
+        </div>
+    </div>
+    <br>
+    <h5>Total: 160</h5>
+    <table class="table table-success table-striped-columns">
+      <table class="table">
+        <thead>
+          <tr>
+            <th><div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">              
+            </div></th>
+            <th scope="col">#</th>
+            <th scope="col">사용</th>
+            <th scope="col">코드그룹 코드</th>
+            <th scope="col">코드그룹 이름</th>
+            <th scope="col">코드</th>
+            <th scope="col">대체코드</th>
+            <th scope="col">코드 이름(영문)</th>
+            <th scope="col">순서</th>
+            <th scope="col">등록일</th>
+            <th scope="col">수정일</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th><div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">              
+            </div></th>
+            <th scope="row">160</th>
+            <td>Y</td>
+            <td>42</td>
+            <td>작품,기타사이트유형</td>
+            <td>381</td>
+            <td>공식홈페이지</td>
+            <td></td>
+            <td>1</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th><div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">              
+            </div></th>
+            <th scope="row">159</th>
+            <td>Y</td>
+            <td>42</td>
+            <td>작품,기타사이트유형</td>
+            <td>382</td>
+            <td>기타사이트</td>
+            <td></td>
+            <td>2</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th><div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">              
+            </div></th>
+            <th scope="row">158</th>
+            <td>Y</td>
+            <td>41</td>
+            <td>작품,연재사이트</td>
+            <td>372</td>
+            <td>네이버웹툰</td>
+            <td></td>
+            <td>1</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th><div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">              
+            </div></th>
+            <th scope="row">157</th>
+            <td>Y</td>
+            <td>41</td>
+            <td>작품,연재사이트</td>
+            <td>373</td>
+            <td>카카오웹툰</td>
+            <td></td>
+            <td>2</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th><div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">              
+            </div></th>
+            <th scope="row">156</th>
+            <td>Y</td>
+            <td>41</td>
+            <td>작품,연재사이트</td>
+            <td>374</td>
+            <td>버프툰</td>
+            <td></td>
+            <td>3</td>
+            <td></td>
+            <td></td>
+          </tr>          
+        </tbody>
+      </table>
+    </table>
       </div>
     </div>
   </div>
